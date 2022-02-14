@@ -57,6 +57,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 2: A blue-to-white gradient depending on ray Y coordinate*
 
+### 5.2. Creating Our First Raytraced Image
+
+![Image 3: A simple red sphere](/images/1-in-one-weekend/image03.png)
+
+*Image 3: A simple red sphere*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
