@@ -1,4 +1,16 @@
+fun hitSphere(center: Point3, radius: Double, r: Ray): Boolean {
+    val oc = r.origin - center
+    val a = r.direction dot r.direction
+    val b = 2.0 * (oc dot r.direction)
+    val c = (oc dot oc) - radius * radius
+    val discriminant = b * b - 4 * a * c
+    return discriminant > 0.0
+}
+
 fun rayColor(r: Ray): Color {
+    if (hitSphere(Point3(0.0, 0.0, -1.0), 0.5, r)) {
+        return Color(1.0, 0.0, 0.0)
+    }
     val unitDirection = unitVector(r.direction)
     val t = 0.5 * (unitDirection.y + 1.0)
     return (1.0 - t) * Color(1.0, 1.0, 1.0) +
