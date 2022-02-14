@@ -10,6 +10,7 @@ fun main() {
     println("P3\n$imageWidth $imageHeight\n255")
 
     for (j in (imageHeight - 1) downTo 0) {
+        System.err.printf("\rScanlines remaining: %3d", j)
         for (i in 0 until imageWidth) {
             val r = i.toDouble() / (imageWidth - 1)
             val g = j.toDouble() / (imageHeight - 1)
@@ -22,4 +23,6 @@ fun main() {
             println("$ir $ig $ib")
         }
     }
+
+    System.err.println("\nDone.")
 }
