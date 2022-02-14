@@ -46,6 +46,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 1: First PPM image*
 
+### 4.2. Sending Rays Into the Scene
+
+![Image 2: A blue-to-white gradient depending on ray Y coordinate](/images/image02.png)
+
+*Image 2: A blue-to-white gradient depending on ray Y coordinate*
+
 
 <!------------------------------------------------------------------------------
   Links
