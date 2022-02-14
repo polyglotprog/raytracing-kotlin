@@ -1,18 +1,26 @@
-fun hitSphere(center: Point3, radius: Double, r: Ray): Boolean {
+import kotlin.math.sqrt
+
+fun hitSphere(center: Point3, radius: Double, r: Ray): Double {
     val oc = r.origin - center
     val a = r.direction dot r.direction
     val b = 2.0 * (oc dot r.direction)
     val c = (oc dot oc) - radius * radius
     val discriminant = b * b - 4 * a * c
-    return discriminant > 0.0
+    return if (discriminant < 0.0) {
+        -1.0
+    } else {
+        (-b - sqrt(discriminant)) / (2.0 * a)
+    }
 }
 
 fun rayColor(r: Ray): Color {
-    if (hitSphere(Point3(0.0, 0.0, -1.0), 0.5, r)) {
-        return Color(1.0, 0.0, 0.0)
+    var t = hitSphere(Point3(0.0, 0.0, -1.0), 0.5, r)
+    if (t > 0.0) {
+        val n = unitVector(r.at(t) - Vec3(0.0, 0.0, -1.0))
+        return 0.5 * Color(n.x + 1.0, n.y + 1.0, n.z + 1.0)
     }
     val unitDirection = unitVector(r.direction)
-    val t = 0.5 * (unitDirection.y + 1.0)
+    t = 0.5 * (unitDirection.y + 1.0)
     return (1.0 - t) * Color(1.0, 1.0, 1.0) +
             t * Color(0.5, 0.7, 1.0)
 }

@@ -63,6 +63,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 3: A simple red sphere*
 
+### 6.1. Shading with Surface Normals
+
+![Image 4: A sphere colored according to its normal vectors](/images/1-in-one-weekend/image04.png)
+
+*Image 4: A sphere colored according to its normal vectors*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
