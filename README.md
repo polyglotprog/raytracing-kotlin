@@ -51,6 +51,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 1: First PPM image*
 
+### 4.2. Sending Rays Into the Scene
+
+![Image 2: A blue-to-white gradient depending on ray Y coordinate](/images/1-in-one-weekend/image02.png)
+
+*Image 2: A blue-to-white gradient depending on ray Y coordinate*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
