@@ -58,6 +58,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 3: A simple red sphere*
 
+### 6.1. Shading with Surface Normals
+
+![Image 4: A sphere colored according to its normal vectors](/images/image04.png)
+
+*Image 4: A sphere colored according to its normal vectors*
+
 
 <!------------------------------------------------------------------------------
   Links
