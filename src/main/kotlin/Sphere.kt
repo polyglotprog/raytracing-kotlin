@@ -32,7 +32,8 @@ data class Sphere(
         val rec = recRef.value
         rec.t = root
         rec.p = r.at(rec.t)
-        rec.normal = (rec.p - center) / radius
+        val outwardNormal = (rec.p - center) / radius
+        rec.setFaceNormal(r, outwardNormal)
 
         return true
     }
