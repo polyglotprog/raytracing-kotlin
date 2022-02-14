@@ -43,6 +43,14 @@ online PPM viewer such as the following:
 
 https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
+## In One Weekend
+
+### 2.2. Creating an Image File
+
+![Image 1: First PPM image](/images/1-in-one-weekend/image01.png)
+
+*Image 1: First PPM image*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
