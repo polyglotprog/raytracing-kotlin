@@ -114,6 +114,13 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 12: Fuzzed metal*
 
+### 10.1. Refraction
+
+*Image 13: Glass first* is omitted. It shows how glass can be rendered
+incorrectly due to a bug, so there is no explanation given for how to generate
+this image. You can view the original at
+[10.1. Refraction](https://raytracing.github.io/books/RayTracingInOneWeekend.html#dielectrics/refraction).
+
 
 <!------------------------------------------------------------------------------
   Links
