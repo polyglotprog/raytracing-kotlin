@@ -108,6 +108,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 11: Shiny metal*
 
+### 9.6. Fuzzy Reflection
+
+![Image 12: Fuzzed metal](/images/image12.png)
+
+*Image 12: Fuzzed metal*
+
 
 <!------------------------------------------------------------------------------
   Links
