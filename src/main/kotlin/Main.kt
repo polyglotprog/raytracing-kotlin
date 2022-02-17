@@ -6,7 +6,7 @@ fun rayColor(r: Ray, world: Hittable, depth: Int): Color {
         return Color.ZERO
     }
 
-    if (world.hit(r, 0.0, infinity, recRef)) {
+    if (world.hit(r, 0.001, infinity, recRef)) {
         val rec = recRef.value
         val target = rec.p + rec.normal + randomInUnitSphere()
         return 0.5 * rayColor(Ray(rec.p, target - rec.p), world, depth - 1)
