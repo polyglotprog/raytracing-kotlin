@@ -95,6 +95,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 8: Diffuse sphere, with gamma correction*
 
+### 8.5. True Lambertian Reflection
+
+![Image 9: Correct rendering of Lambertian spheres](/images/1-in-one-weekend/image09.png)
+
+*Image 9: Correct rendering of Lambertian spheres*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
