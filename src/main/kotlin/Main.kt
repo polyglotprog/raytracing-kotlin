@@ -17,6 +17,7 @@ fun main() {
     val aspectRatio = 16.0 / 9.0
     val imageWidth = 400
     val imageHeight = (imageWidth / aspectRatio).toInt()
+    val samplesPerPixel = 100
 
     // World
 
@@ -25,16 +26,7 @@ fun main() {
     world.add(Sphere(Point3(0.0, -100.5, -1.0), 100.0))
 
     // Camera
-
-    val viewportHeight = 2.0
-    val viewportWidth = aspectRatio * viewportHeight
-    val focalLength = 1.0
-
-    val origin = Point3(0.0, 0.0, 0.0)
-    val horizontal = Vec3(viewportWidth, 0.0, 0.0)
-    val vertical = Vec3(0.0, viewportHeight, 0.0)
-    val lowerLeftCorner = origin - horizontal / 2.0 - vertical / 2.0 -
-            Vec3(0.0, 0.0, focalLength)
+    val cam = Camera()
 
     // Render
 
@@ -43,14 +35,14 @@ fun main() {
     for (j in (imageHeight - 1) downTo 0) {
         System.err.printf("\rScanlines remaining: %3d", j)
         for (i in 0 until imageWidth) {
-            val u = i.toDouble() / (imageWidth - 1)
-            val v = j.toDouble() / (imageHeight - 1)
-            val r = Ray(
-                origin,
-                lowerLeftCorner + u * horizontal + v * vertical - origin
-            )
-            val pixelColor = rayColor(r, world)
-            writeColor(System.out, pixelColor)
+            val pixelColor = Color(0.0, 0.0, 0.0)
+            for (s in 0 until samplesPerPixel) {
+                val u = (i + randomDouble()) / (imageWidth - 1)
+                val v = (j + randomDouble()) / (imageHeight - 1)
+                val r = cam.getRay(u, v)
+                pixelColor += rayColor(r, world)
+            }
+            writeColor(System.out, pixelColor, samplesPerPixel)
         }
     }
 
