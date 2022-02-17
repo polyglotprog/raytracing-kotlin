@@ -1,3 +1,6 @@
+import kotlin.math.min
+import kotlin.math.sqrt
+
 data class Dielectric(val indexOfRefraction: Double) : Material {
     override fun scatter(
         rIn: Ray,
@@ -12,9 +15,17 @@ data class Dielectric(val indexOfRefraction: Double) : Material {
             indexOfRefraction
 
         val unitDirection = unitVector(rIn.direction)
-        val refracted = refract(unitDirection, rec.normal, refractionRatio)
+        val cosTheta = min(-unitDirection dot rec.normal, 1.0)
+        val sinTheta = sqrt(1.0 - cosTheta * cosTheta)
 
-        scattered.value = Ray(rec.p, refracted)
+        val cannotRefract = refractionRatio * sinTheta > 1.0
+
+        val direction = if (cannotRefract)
+            reflect(unitDirection, rec.normal)
+        else
+            refract(unitDirection, rec.normal, refractionRatio)
+
+        scattered.value = Ray(rec.p, direction)
         return true
     }
 }

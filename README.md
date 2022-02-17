@@ -127,6 +127,12 @@ this image. You can view the original at
 
 *Image 14: Glass sphere that always refracts*
 
+### 10.3. Total Internal Reflection
+
+![Image 15: Glass sphere that sometimes refracts](/images/image15.png)
+
+*Image 15: Glass sphere that sometimes refracts*
+
 
 <!------------------------------------------------------------------------------
   Links
