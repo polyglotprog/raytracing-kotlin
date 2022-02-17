@@ -84,6 +84,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 7: First render of a diffuse sphere*
 
+### 8.3. Using Gamma Correction for Accurate Color Intensity
+
+![Image 8: Diffuse sphere, with gamma correction](/images/image08.png)
+
+*Image 8: Diffuse sphere, with gamma correction*
+
 
 <!------------------------------------------------------------------------------
   Links
