@@ -132,6 +132,12 @@ this image. You can view the original at
 
 *Image 14: Glass sphere that always refracts*
 
+### 10.3. Total Internal Reflection
+
+![Image 15: Glass sphere that sometimes refracts](/images/1-in-one-weekend/image15.png)
+
+*Image 15: Glass sphere that sometimes refracts*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
