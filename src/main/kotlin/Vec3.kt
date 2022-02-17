@@ -1,3 +1,4 @@
+import kotlin.math.abs
 import kotlin.math.sqrt
 
 data class Vec3(
@@ -66,6 +67,13 @@ data class Vec3(
         @JvmName("lengthSquared")
         get() {
             return x * x + y * y + z * z
+        }
+
+    val isNearZero: Boolean
+        @JvmName("isNearZero")
+        get() {
+            val s = 1e-8
+            return abs(x) < s && abs(y) < s && abs(z) < s
         }
 
     inline infix fun dot(that: Vec3): Double {
