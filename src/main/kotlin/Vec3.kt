@@ -120,3 +120,12 @@ fun randomInUnitSphere(): Vec3 {
 fun randomUnitVector(): Vec3 {
     return unitVector(randomInUnitSphere())
 }
+
+fun randomInHemisphere(normal: Vec3): Vec3 {
+    val inUnitSphere = randomInUnitSphere()
+    return if (inUnitSphere dot normal > 0.0)
+    // In the same hemisphere as the normal
+        inUnitSphere
+    else
+        -inUnitSphere
+}
