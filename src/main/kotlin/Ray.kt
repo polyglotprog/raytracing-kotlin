@@ -5,4 +5,8 @@ data class Ray(
     fun at(t: Double): Vec3 {
         return origin + t * direction
     }
+
+    companion object {
+        val NONE = Ray()
+    }
 }

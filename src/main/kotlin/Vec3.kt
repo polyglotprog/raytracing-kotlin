@@ -137,3 +137,7 @@ fun randomInHemisphere(normal: Vec3): Vec3 {
     else
         -inUnitSphere
 }
+
+fun reflect(v: Vec3, n: Vec3): Vec3 {
+    return v - 2 * (v dot n) * n
+}

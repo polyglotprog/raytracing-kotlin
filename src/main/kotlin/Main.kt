@@ -8,9 +8,16 @@ fun rayColor(r: Ray, world: Hittable, depth: Int): Color {
 
     if (world.hit(r, 0.001, infinity, recRef)) {
         val rec = recRef.value
-        val target = rec.p + randomInHemisphere(rec.normal)
-        return 0.5 * rayColor(Ray(rec.p, target - rec.p), world, depth - 1)
+        val scattered = Reference(Ray.NONE)
+        val attenuation = Reference(Color.ZERO)
+        if (rec.mat.scatter(r, rec, attenuation, scattered))
+            return attenuation.value * rayColor(
+                scattered.value, world,
+                depth - 1
+            )
+        return Color.ZERO
     }
+
     val unitDirection = unitVector(r.direction)
     val t = 0.5 * (unitDirection.y + 1.0)
     return (1.0 - t) * Color(1.0, 1.0, 1.0) +
