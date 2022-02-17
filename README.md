@@ -113,6 +113,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 11: Shiny metal*
 
+### 9.6. Fuzzy Reflection
+
+![Image 12: Fuzzed metal](/images/1-in-one-weekend/image12.png)
+
+*Image 12: Fuzzed metal*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
