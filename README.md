@@ -107,6 +107,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 10: Rendering of diffuse spheres with hemispherical scattering*
 
+### 9.5. A Scene with Metal Spheres
+
+![Image 11: Shiny metal](/images/1-in-one-weekend/image11.png)
+
+*Image 11: Shiny metal*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
