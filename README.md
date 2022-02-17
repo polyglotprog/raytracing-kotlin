@@ -70,6 +70,14 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 5: Resulting render of normals-colored sphere with ground*
 
+### 7.2. Generating Pixels with Multiple Samples
+
+![Image 6: After antialiasing](/images/image06.png)
+
+![Image 6: Before and after antialiasing](/images/image06-before-after.png)
+
+*Image 6: Before and after antialiasing*
+
 
 <!------------------------------------------------------------------------------
   Links

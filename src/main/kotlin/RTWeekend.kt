@@ -22,3 +22,9 @@ inline fun randomDouble(min: Double, max: Double): Double {
     // Returns a random real in [min,max).
     return min + (max - min) * randomDouble()
 }
+
+inline fun clamp(x: Double, min: Double, max: Double): Double {
+    if (x < min) return min
+    if (x > max) return max
+    return x
+}
