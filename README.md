@@ -101,6 +101,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 9: Correct rendering of Lambertian spheres*
 
+### 8.6. An Alternative Diffuse Formulation
+
+![Image 10: Rendering of diffuse spheres with hemispherical scattering](/images/1-in-one-weekend/image10.png)
+
+*Image 10: Rendering of diffuse spheres with hemispherical scattering*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
