@@ -1,4 +1,5 @@
 import kotlin.math.min
+import kotlin.math.pow
 import kotlin.math.sqrt
 
 data class Dielectric(val indexOfRefraction: Double) : Material {
@@ -20,12 +21,25 @@ data class Dielectric(val indexOfRefraction: Double) : Material {
 
         val cannotRefract = refractionRatio * sinTheta > 1.0
 
-        val direction = if (cannotRefract)
+        val direction: Vec3 = if (cannotRefract || reflectance(
+                cosTheta,
+                refractionRatio
+            ) > randomDouble())
             reflect(unitDirection, rec.normal)
         else
             refract(unitDirection, rec.normal, refractionRatio)
 
         scattered.value = Ray(rec.p, direction)
         return true
+    }
+
+    private fun reflectance(
+        cosine: Double,
+        refIdx: Double
+    ): Double {
+        // Use Schlick's approximation for reflectance.
+        var r0 = (1 - refIdx) / (1 + refIdx)
+        r0 = r0 * r0
+        return r0 + (1 - r0) * (1 - cosine).pow(5)
     }
 }
