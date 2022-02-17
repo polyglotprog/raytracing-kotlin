@@ -46,6 +46,7 @@ fun main() {
     world.add(Sphere(Point3( 0.0, -100.5, -1.0), 100.0, materialGround))
     world.add(Sphere(Point3( 0.0,    0.0, -1.0),   0.5, materialCenter))
     world.add(Sphere(Point3(-1.0,    0.0, -1.0),   0.5, materialLeft))
+    world.add(Sphere(Point3(-1.0,    0.0, -1.0),  -0.4, materialLeft))
     world.add(Sphere(Point3( 1.0,    0.0, -1.0),   0.5, materialRight))
 
     // Camera

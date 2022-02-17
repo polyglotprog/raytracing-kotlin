@@ -133,6 +133,12 @@ this image. You can view the original at
 
 *Image 15: Glass sphere that sometimes refracts*
 
+### 10.5. Modeling a Hollow Glass Sphere
+
+![Image 16: A hollow glass sphere](/images/image16.png)
+
+*Image 16: A hollow glass sphere*
+
 
 <!------------------------------------------------------------------------------
   Links
