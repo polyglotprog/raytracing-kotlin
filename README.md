@@ -78,6 +78,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 6: Before and after antialiasing*
 
+### 8.2. Limiting the Number of Child Rays
+
+![Image 7: First render of a diffuse sphere](/images/image07.png)
+
+*Image 7: First render of a diffuse sphere*
+
 
 <!------------------------------------------------------------------------------
   Links
