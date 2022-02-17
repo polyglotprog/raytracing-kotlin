@@ -64,6 +64,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 4: A sphere colored according to its normal vectors*
 
+### 6.7. Common Constants and Utility Functions
+
+![Image 5: Resulting render of normals-colored sphere with ground](/images/image05.png)
+
+*Image 5: Resulting render of normals-colored sphere with ground*
+
 
 <!------------------------------------------------------------------------------
   Links
