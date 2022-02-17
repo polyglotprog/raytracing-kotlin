@@ -1,6 +1,7 @@
 data class HitRecord(
     var p: Point3 = Point3(),
     var normal: Vec3 = Vec3(),
+    var mat: Material = Material.NONE,
     var t: Double = 0.0,
     var frontFace: Boolean = false
 ) {
