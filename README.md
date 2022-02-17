@@ -89,6 +89,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 7: First render of a diffuse sphere*
 
+### 8.3. Using Gamma Correction for Accurate Color Intensity
+
+![Image 8: Diffuse sphere, with gamma correction](/images/1-in-one-weekend/image08.png)
+
+*Image 8: Diffuse sphere, with gamma correction*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
