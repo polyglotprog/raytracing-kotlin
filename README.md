@@ -138,6 +138,12 @@ this image. You can view the original at
 
 *Image 15: Glass sphere that sometimes refracts*
 
+### 10.5. Modeling a Hollow Glass Sphere
+
+![Image 16: A hollow glass sphere](/images/1-in-one-weekend/image16.png)
+
+*Image 16: A hollow glass sphere*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
