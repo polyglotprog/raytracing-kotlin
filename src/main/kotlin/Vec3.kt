@@ -81,6 +81,8 @@ data class Vec3(
     }
 
     companion object {
+        val ZERO = Vec3()
+
         inline fun random(): Vec3 {
             return Vec3(randomDouble(), randomDouble(), randomDouble())
         }

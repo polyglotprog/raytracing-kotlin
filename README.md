@@ -83,6 +83,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 6: Before and after antialiasing*
 
+### 8.2. Limiting the Number of Child Rays
+
+![Image 7: First render of a diffuse sphere](/images/1-in-one-weekend/image07.png)
+
+*Image 7: First render of a diffuse sphere*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
