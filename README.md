@@ -126,6 +126,12 @@ incorrectly due to a bug, so there is no explanation given for how to generate
 this image. You can view the original at
 [10.1. Refraction](https://raytracing.github.io/books/RayTracingInOneWeekend.html#dielectrics/refraction).
 
+### 10.2. Snell's Law
+
+![Image 14: Glass sphere that always refracts](/images/1-in-one-weekend/image14.png)
+
+*Image 14: Glass sphere that always refracts*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
