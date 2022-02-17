@@ -2,7 +2,8 @@ fun rayColor(r: Ray, world: Hittable): Color {
     val recRef = Reference(HitRecord.NONE)
     if (world.hit(r, 0.0, infinity, recRef)) {
         val rec = recRef.value
-        return 0.5 * (rec.normal + Color(1.0, 1.0, 1.0))
+        val target = rec.p + rec.normal + randomInUnitSphere()
+        return 0.5 * rayColor(Ray(rec.p, target - rec.p), world)
     }
     val unitDirection = unitVector(r.direction)
     val t = 0.5 * (unitDirection.y + 1.0)

@@ -79,6 +79,20 @@ data class Vec3(
             this.x * that.y - this.y * that.x
         )
     }
+
+    companion object {
+        inline fun random(): Vec3 {
+            return Vec3(randomDouble(), randomDouble(), randomDouble())
+        }
+
+        inline fun random(min: Double, max: Double): Vec3 {
+            return Vec3(
+                randomDouble(min, max),
+                randomDouble(min, max),
+                randomDouble(min, max)
+            )
+        }
+    }
 }
 
 // Type aliases for vec3
@@ -91,4 +105,12 @@ inline operator fun Double.times(v: Vec3): Vec3 {
 
 inline fun unitVector(v: Vec3): Vec3 {
     return v / v.length
+}
+
+fun randomInUnitSphere(): Vec3 {
+    while (true) {
+        val p = Vec3.random(-1.0, 1.0)
+        if (p.lengthSquared >= 1) continue
+        return p
+    }
 }
