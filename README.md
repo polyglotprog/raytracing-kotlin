@@ -102,6 +102,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 10: Rendering of diffuse spheres with hemispherical scattering*
 
+### 9.5. A Scene with Metal Spheres
+
+![Image 11: Shiny metal](/images/image11.png)
+
+*Image 11: Shiny metal*
+
 
 <!------------------------------------------------------------------------------
   Links
