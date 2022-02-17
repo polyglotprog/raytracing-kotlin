@@ -8,7 +8,7 @@ fun rayColor(r: Ray, world: Hittable, depth: Int): Color {
 
     if (world.hit(r, 0.001, infinity, recRef)) {
         val rec = recRef.value
-        val target = rec.p + rec.normal + randomInUnitSphere()
+        val target = rec.p + rec.normal + randomUnitVector()
         return 0.5 * rayColor(Ray(rec.p, target - rec.p), world, depth - 1)
     }
     val unitDirection = unitVector(r.direction)

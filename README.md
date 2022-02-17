@@ -90,6 +90,12 @@ https://www.cs.rhodes.edu/welshc/COMP141_F16/ppmReader.html
 
 *Image 8: Diffuse sphere, with gamma correction*
 
+### 8.5. True Lambertian Reflection
+
+![Image 9: Correct rendering of Lambertian spheres](/images/image09.png)
+
+*Image 9: Correct rendering of Lambertian spheres*
+
 
 <!------------------------------------------------------------------------------
   Links
