@@ -139,6 +139,14 @@ fun randomInHemisphere(normal: Vec3): Vec3 {
         -inUnitSphere
 }
 
+fun randomInUnitDisk(): Vec3 {
+    while (true) {
+        val p = Vec3(randomDouble(-1.0, 1.0), randomDouble(-1.0, 1.0), 0.0)
+        if (p.lengthSquared >= 1) continue
+        return p
+    }
+}
+
 fun reflect(v: Vec3, n: Vec3): Vec3 {
     return v - 2 * (v dot n) * n
 }

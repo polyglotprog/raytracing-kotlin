@@ -155,6 +155,12 @@ this image. You can view the original at
 
 *Image 19: Zooming in*
 
+### 12.2. Generating Sample Rays
+
+![Image 20: Spheres with depth-of-field](/images/image20.png)
+
+*Image 20: Spheres with depth-of-field*
+
 
 <!------------------------------------------------------------------------------
   Links
