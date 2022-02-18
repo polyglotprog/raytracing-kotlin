@@ -156,6 +156,10 @@ this image. You can view the original at
 
 *Image 18: A distant view*
 
+![Image 19: Zooming in](/images/1-in-one-weekend/image19.png)
+
+*Image 19: Zooming in*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
