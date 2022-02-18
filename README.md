@@ -1,5 +1,7 @@
 # Ray Tracing in One Weekend (Kotlin Implementation)
 
+![Final Scene](/images/image21.png)
+
 An implementation of Peter Shirley's ray tracer from the
 [_Ray Tracing in One Weekend_], written in [Kotlin].
 
@@ -160,6 +162,12 @@ this image. You can view the original at
 ![Image 20: Spheres with depth-of-field](/images/image20.png)
 
 *Image 20: Spheres with depth-of-field*
+
+### 13.1. A Final Render
+
+![Image 21: Final scene](/images/image21.png)
+
+*Image 21: Final scene*
 
 
 <!------------------------------------------------------------------------------
