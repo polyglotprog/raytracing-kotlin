@@ -144,6 +144,12 @@ this image. You can view the original at
 
 *Image 16: A hollow glass sphere*
 
+### 11.1. Camera Viewing Geometry
+
+![Image 17: A wide-angle view](/images/1-in-one-weekend/image17.png)
+
+*Image 17: A wide-angle view*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
