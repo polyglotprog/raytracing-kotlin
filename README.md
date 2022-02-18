@@ -160,6 +160,12 @@ this image. You can view the original at
 
 *Image 19: Zooming in*
 
+### 12.2. Generating Sample Rays
+
+![Image 20: Spheres with depth-of-field](/images/1-in-one-weekend/image20.png)
+
+*Image 20: Spheres with depth-of-field*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html
