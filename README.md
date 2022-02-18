@@ -150,6 +150,12 @@ this image. You can view the original at
 
 *Image 17: A wide-angle view*
 
+### 11.2. Positioning and Orienting the Camera
+
+![Image 18: A distant view](/images/1-in-one-weekend/image18.png)
+
+*Image 18: A distant view*
+
 
 [_Ray Tracing in One Weekend_ Series]: https://raytracing.github.io/
 [_Ray Tracing in One Weekend_]: https://raytracing.github.io/books/RayTracingInOneWeekend.html

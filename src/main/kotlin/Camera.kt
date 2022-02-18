@@ -7,6 +7,9 @@ data class Camera(
     var vertical: Vec3
 ) {
     constructor(
+        lookFrom: Point3,
+        lookAt: Point3,
+        vUp: Vec3,
         vFov: Double, // vertical field-of-view in degrees
         aspectRatio: Double
     ) : this(Point3(), Point3(), Vec3(), Vec3()) {
@@ -14,19 +17,21 @@ data class Camera(
         val h = tan(theta / 2.0)
         val viewportHeight = 2.0 * h
         val viewportWidth = aspectRatio * viewportHeight
-        val focalLength = 1.0
 
-        this.origin = Point3(0.0, 0.0, 0.0)
-        this.horizontal = Vec3(viewportWidth, 0.0, 0.0)
-        this.vertical = Vec3(0.0, viewportHeight, 0.0)
-        this.lowerLeftCorner = origin - horizontal / 2.0 - vertical / 2.0 -
-                Vec3(0.0, 0.0, focalLength)
+        val w = unitVector(lookFrom - lookAt)
+        val u = unitVector(vUp cross w)
+        val v = w cross u
+
+        this.origin = lookFrom
+        this.horizontal = viewportWidth * u
+        this.vertical = viewportHeight * v
+        this.lowerLeftCorner = origin - horizontal / 2.0 - vertical / 2.0 - w
     }
 
-    fun getRay(u: Double, v: Double): Ray {
+    fun getRay(s: Double, t: Double): Ray {
         return Ray(
             origin,
-            lowerLeftCorner + u * horizontal + v * vertical - origin
+            lowerLeftCorner + s * horizontal + t * vertical - origin
         )
     }
 }
